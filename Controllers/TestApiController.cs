@@ -11,5 +11,15 @@ namespace IoTDesktopControl.Controllers
     [ApiController]
     public class TestApiController : ControllerBase
     {
+        public TestApiController()
+        {
+
+        }
+
+        [HttpGet]
+        public ActionResult<string> GetTest()
+        {
+            return StatusCode(200, "This works!");
+        }
     }
 }
